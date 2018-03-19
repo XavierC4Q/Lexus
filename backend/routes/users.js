@@ -15,8 +15,8 @@ router.get('/following/:userID', db.getFollowing)
 router.get('/comment/:recipeID', db.getRecipeComments)
 router.get('/allusers', db.getAllUsers);
 router.get('/allrecipes', db.getAllResipes);
-router.get('/allrecipes/:userID', db.getAllResipesByUserID);
-router.get('/allfollowersrecipes/:userID', db.getAllFollowersRecipes);
+router.get('/allrecipes/:userID', loginRequired, db.getAllResipesByUserID);
+router.get('/allfollowersrecipes/:userID', loginRequired, db.getAllFollowersRecipes);
 
 
 /*POST Request*/
