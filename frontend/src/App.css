@@ -74,6 +74,14 @@
   box-shadow: 20px 10px 40px -14px rgba(0, 0, 0, 0.25);
   /* color: white;  */
 }
+/*reactive screen settings*/
+@media only screen and (max-width: 768px) {
+  .recipeBox{
+    margin: 0,0,0,0 auto;
+   
+  }
+
+}
 
 .favorites {
   display: flex;

@@ -29,8 +29,8 @@ class RecipeBox extends React.Component{
 
     return(
       <div className="recipeBox">
-        <h3>{recipe_name}</h3>
-        <Link to={`/cb/${user_id}/${recipe_id}`}> <img src={img} alt="recipeImg" style={styles.img} /></Link>
+        <h3 className="recipeName">{recipe_name}</h3>
+        <Link to={`/cb/${user_id}/${recipe_id}`}> <img className="recipeImg" src={img} alt="recipeImg" style={styles.img} /></Link>
         <div className="recipeInfo">
         <h4>Chef {username}</h4>
         <div className="favorites" title="Favorites"> <i class="fas fa-file-alt"></i> <p className="fav">{favorites_count}</p> </div>
